@@ -1,0 +1,24 @@
+ALGORITHM 
+
+VAR
+    sentance : STRING
+    counter2: INTEGER=0
+    counter1: INTEGER=0
+    counter: INTEGER=0
+    vowels:=a,o,e,u,i : INTEGER
+BEGIN
+
+    FOR i FROM 0 TO i<sentance.length STEP i++  DO
+   counter=counter+1
+      IF (sentance[i:]=" ") THEN
+           counter1:=counter1 + 1
+       END_IF
+       IF (sentance[i]:=".")) THEN
+           counter1:=counter1 + 1
+       END_IF
+      IF (sentance[i]:=vowels) THEN
+          counter2:=counter2+1
+      ELSE
+          counter2=0
+      END_IF
+    END_FOR
